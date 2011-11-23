@@ -1,4 +1,4 @@
-
+// just testing
 function MessageBar() {
 	var a = function (a, b) {
 		for (var c in b) {
