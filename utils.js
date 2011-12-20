@@ -13,11 +13,8 @@ MessageBar: function() {
 	document.body.appendChild(b);
 	this.setMessage = function (a) { while (b.firstChild) { b.removeChild(b.firstChild) } b.appendChild(document.createTextNode(a)); };
 	this.toggleVisibility = function () { b.style.display = b.style.display === "none" ? "block" : "none"; };
-}
-};
-var MessageBar = contegix.MessageBar; // set up the function sans-class, to preserve legacy
-
-String.parseJSON  = (function (s) {
+},
+parseJSON: (function (s) {
 
   var m = {
     '\b': '\\b',
@@ -77,11 +74,6 @@ String.parseJSON  = (function (s) {
       throw new SyntaxError("parseJSON: filter failed");
     };
   }
-) (String.prototype);
-// End public domain parseJSON block
-
-function SyntaxError(e)
-{
- alert(e);
-}
-
+)
+};
+var MessageBar = contegix.MessageBar; // set up the function sans-class, to preserve legacy
