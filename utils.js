@@ -1,5 +1,7 @@
-// just testing
-function MessageBar() {
+// utils.js - a little class of utility functions for work stuff
+
+var contegix = {
+MessageBar: function() {
 	var a = function (a, b) {
 		for (var c in b) {
 			a.style[c] = b[c];
@@ -27,4 +29,4 @@ function MessageBar() {
 			b.style.display = b.style.display === "none" ? "block" : "none"
 		}
 }
-
+}
