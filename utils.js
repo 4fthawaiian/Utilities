@@ -8,7 +8,7 @@ MessageBar: function() {
 		}
 		return a;
 	};
-	var b = a(document.createElement("div"), { top: 0, left: 0, position: "fixed", background: "orange", width: "100%", padding: "10px", textAlign: "center" });
+	var b = a(document.createElement("div"), { top: 0, left: 0, position: "fixed", background: "red", width: "100%", padding: "10px", textAlign: "center" });
 	b.setAttribute('id', "alertMessage");
 	document.body.appendChild(b);
 	this.setMessage = function (a) { while (b.firstChild) { b.removeChild(b.firstChild) } b.appendChild(document.createTextNode(a)); };
