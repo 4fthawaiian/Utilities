@@ -15,5 +15,5 @@ MessageBar: function() {
 	this.toggleVisibility = function () { b.style.display = b.style.display === "none" ? "block" : "none"; };
 }
 };
-var MessageBar = contegix.MessageBar;
+var MessageBar = contegix.MessageBar; // set up the function sans-class, to preserve legacy
 
