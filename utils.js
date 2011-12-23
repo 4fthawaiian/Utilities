@@ -26,6 +26,7 @@ var display_tickets = new Array();
 
 $('table#ticket_list tr').each(function() {
     if(ticket_row > 0) {
+      $(this).children("td").css("border-bottom", "0");
       ticket_number = $(this).find("td:eq(1)").find("a:eq(1)").text();
       ticket_subject_container = $(this).find("td:eq(1)");
       ticket_subject_lines = ($(this).find("td:eq(1)").text().split('\n'));
