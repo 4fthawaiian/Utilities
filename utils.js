@@ -44,5 +44,18 @@ $('table#ticket_list tr').each(function() {
     ticket_row += 1;
 });
 return display_tickets;
+},
+getHQLink: function(pageObject) {
+txt = $(pageObject+".original_ticket").text();
+ticketNumber = $(pageObject+".ticket_id").text();
+var hq_line = "";
+var re = /https\:\/\/monitor\.contegix\.com\/Resource.*\.do\?eid\=3\:(.*)/g;
+var matches = txt.match(re);
+var return_value = []
+
+for (i=0; i<matches.length; i++) {
+  match = matches[i].split("3:");
+  return_value[return_value.length+1] = match[1]; 
+}
 }
 };
