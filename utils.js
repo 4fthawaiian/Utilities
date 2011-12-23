@@ -21,10 +21,8 @@ MessageBar: function() {
 },
 GetHTTPTickets: function() {
 var txt = $("table#ticket_list").text();
-console.debug(txt);
 var ticket_row = 0;
 var display_tickets = new Array();
-console.debug(display_tickets);
 
 $('table#ticket_list tr').each(function() {
     if(ticket_row > 0) {
