@@ -38,7 +38,7 @@ $('table#ticket_list tr').each(function() {
         if ($.trim(engineer_lines[2]) !== "") {
           engineer_status = $.trim(engineer_lines[2]);
         }
-        display_tickets[display_tickets.length] = {"number": ticket_number, "subject": ticket_subject, "engineer": engineer, "status": ticket_status, "engineer_status": engineer_status, "URL": "https://noctane.contegix.com/noc/tickets/"+ticket_number};
+        display_tickets[display_tickets.length] = {"number": ticket_number, "subject": ticket_subject, "engineer": engineer, "status": ticket_status, "engineer_status": engineer_status, "URL": "https://noctane.contegix.com/noc/tickets/"+ticket_number, "ticket_container": ticket_subject_container};
       }
     }
     ticket_row += 1;
