@@ -11,7 +11,12 @@ MessageBar: function() {
 	var b = a(document.createElement("div"), { top: 0, left: 0, position: "fixed", background: "red", width: "100%", padding: "10px", textAlign: "center" });
 	b.setAttribute('id', "alertMessage");
 	document.body.appendChild(b);
-	this.setMessage = function (a) { while (b.firstChild) { b.removeChild(b.firstChild) } b.appendChild(document.createTextNode(a)); };
+	this.setMessage = function (a) {
+          while (b.firstChild) {
+            b.removeChild(b.firstChild);
+          }
+          b.appendChild(document.createTextNode(a));
+        };
 	this.toggleVisibility = function () { b.style.display = b.style.display === "none" ? "block" : "none"; };
 },
 GetHTTPTickets: function() {
