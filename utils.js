@@ -1,7 +1,5 @@
 // utils.js - a little class of utility functions for work stuff
 
-alert('hello');
-
 var contegix = {
 MessageBar: function() {
 	var a = function (a, b) {
@@ -51,4 +49,3 @@ return display_tickets;
 }
 };
 var MessageBar = contegix.MessageBar; // set up the function sans-class, to preserve legacy
-var GetHTTPTickets = contegix.GetHTTPTickets; // set up the function sans-class, to preserve legacy
