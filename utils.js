@@ -16,7 +16,7 @@ MessageBar: function() {
 }
 GetHTTPTickets: function() {
 var txt = $("table#ticket_list").text();
-
+console.debug('hello');
 var ticket_row = 0;
 var display_tickets = new Array();
 console.debug(display_tickets);
