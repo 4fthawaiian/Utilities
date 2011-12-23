@@ -57,5 +57,6 @@ for (i=0; i<matches.length; i++) {
   match = matches[i].split("3:");
   return_value[return_value.length+1] = match[1]; 
 }
+return return_value;
 }
 };
