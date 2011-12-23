@@ -1,5 +1,7 @@
 // utils.js - a little class of utility functions for work stuff
 
+alert('hello');
+
 var contegix = {
 MessageBar: function() {
 	var a = function (a, b) {
