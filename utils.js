@@ -44,4 +44,4 @@ return display_tickets;
 }
 };
 var MessageBar = contegix.MessageBar; // set up the function sans-class, to preserve legacy
-var GetHTTPTickets = contegix.MessageBar; // set up the function sans-class, to preserve legacy
+var GetHTTPTickets = contegix.GetHTTPTickets; // set up the function sans-class, to preserve legacy
