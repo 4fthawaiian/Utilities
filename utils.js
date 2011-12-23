@@ -26,12 +26,12 @@ var display_tickets = new Array();
 
 $('table#ticket_list tr').each(function() {
     if(ticket_row > 0) {
-      $(this).children("td").css("border-bottom", "0");
       ticket_number = $(this).find("td:eq(1)").find("a:eq(1)").text();
       ticket_subject_container = $(this).find("td:eq(1)");
       ticket_subject_lines = ($(this).find("td:eq(1)").text().split('\n'));
       ticket_subject = $.trim(ticket_subject_lines[(ticket_subject_lines.length - 2)]);
       if(ticket_subject.search(/HTTP Availability/) > 0) {
+        $(this).children("td").css("border-bottom", "0");
         engineer_lines = $(this).find("td:eq(3)").text().split('\n');
         ticket_status = $(this).find("td:eq(4)").text();
         engineer = $.trim(engineer_lines[1]);
