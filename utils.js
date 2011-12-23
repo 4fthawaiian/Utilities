@@ -51,7 +51,7 @@ ticketNumber = $(pageObject+".ticket_id").text();
 var hq_line = "";
 var re = /https\:\/\/monitor\.contegix\.com\/Resource.*\.do\?eid\=3\:(.*)/g;
 var matches = txt.match(re);
-var return_value = []
+var return_value = [];
 
 for (i=0; i<matches.length; i++) {
   match = matches[i].split("3:");
