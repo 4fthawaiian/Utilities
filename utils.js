@@ -13,7 +13,7 @@ MessageBar: function() {
 	document.body.appendChild(b);
 	this.setMessage = function (a) { while (b.firstChild) { b.removeChild(b.firstChild) } b.appendChild(document.createTextNode(a)); };
 	this.toggleVisibility = function () { b.style.display = b.style.display === "none" ? "block" : "none"; };
-}
+},
 GetHTTPTickets: function() {
 var txt = $("table#ticket_list").text();
 console.debug(txt);
@@ -35,7 +35,7 @@ $('table#ticket_list tr').each(function() {
         if ($.trim(engineer_lines[2]) !== "") {
           engineer_status = $.trim(engineer_lines[2]);
         }
-        display_tickets[display_tickets.length] = {"number": ticket_number, "subject": ticket_subject, "engineer": engineer, "status": ticket_status, "engineer_status": engineer_status}
+        display_tickets[display_tickets.length] = {"number": ticket_number, "subject": ticket_subject, "engineer": engineer, "status": ticket_status, "engineer_status": engineer_status};
       }
     }
     ticket_row += 1;
