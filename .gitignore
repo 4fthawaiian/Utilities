@@ -1,1 +1,7 @@
-*.swp
+# Xcode stuff
+build
+*.pbxuser
+*.mode1v3
+
+# Mac stuff
+.DS_Store
